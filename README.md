@@ -57,4 +57,4 @@ docker run --network host olympe:latest
 From the [Docker docs](https://docs.docker.com/network/host/)
 > The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac, Docker Desktop for Windows, or Docker EE for Windows Server.
 
-In practice this means that if you're running this image, the olympe script you are running will run unreliable. This mostly means getting time synchronization failures, ping errors, and connection timeouts.
+In practice this means that if you're running this image on a non Linux host, the olympe script you are running will run unreliable. This mostly means getting time synchronization failures, ping errors, and connection timeouts.
